@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <CoMenu/>
+  <div>
+    <CoAlbum/>
+  </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CoAlbum from "./components/CoAlbum"
+import CoMenu from "./components/CoMenu"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CoAlbum,
+    CoMenu,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#app{
+  background-color: rgb(59, 55, 55);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+#titulo{
+  color: aliceblue;
+  font: 200px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
 }
 </style>
